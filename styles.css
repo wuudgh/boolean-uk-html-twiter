@@ -1,0 +1,133 @@
+*{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+}
+
+
+.container {
+        display: grid;
+        grid-template:  
+        "left main right"  1fr/
+         1fr 800px 1fr;
+        height: 100vh;
+        border: solid black;
+}
+
+
+
+.left {
+        grid-area: left;
+        border-right: solid black;
+        display: grid;
+        grid-template-rows: repeat(9, 100px);
+        place-items: center start;
+        margin: 10px;
+
+        
+}
+
+a {
+        text-decoration: none;
+        color: black;
+}
+
+
+.main {
+        grid-area: main;
+        border-right: solid black;
+        display: grid;
+        grid-template-rows:  50px 70px  200px;
+
+}
+
+
+.right {
+        grid-area: right;
+        display: grid
+
+        
+}
+
+.img-icon{
+        width: 100px;
+
+}
+.icon{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        gap: 20px;
+        
+
+}
+
+span{
+        font-size: 2rem;
+        padding: 9px
+
+}
+
+.explore {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+
+}
+
+.notification{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+
+}
+
+.messages {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+
+}
+
+.bookmarks {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+}
+
+.list{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+        
+}
+
+.profile {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+}
+
+.more {
+        display: grid;
+        grid-template-columns: 50px 1fr;
+
+
+
+}
+
+.tweet{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        background-color: rgb(88, 143, 243);
+        color: white;
+        place-items: center;
+        border-radius: 40px
+
+}
+
+
+        
+
+
+}
+
